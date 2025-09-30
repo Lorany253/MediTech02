@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+   background: linear-gradient(to right, #eef4fa, #8ab8de);
+       /* Faz a imagem ocupar toda a tela */
+    /* Centraliza a imagem */
+    /* Impede que a imagem se repita */
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(225, 225, 225);
+}
+/* Estilo da logo */
+.logo img {
+    max-height: 75px; /* Ajuste a altura da logo conforme necessário */
+    float: left;
+}
+#banner{
+    background-image: url(/img/banner.png);
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: contain; /* Ajusta a imagem para caber dentro da div sem cortar */
+    display: flex;
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    overflow: hidden;
+    height: 400px;
+    width: 100%; /* Garante que a largura do banner ocupe toda a tela */;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    color: rgb(110, 198, 204);
+    margin: 15px 50px;
+}
+ul li{
+    position: center;
+    margin-top: 10px;
+}
+ul li a{
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0,3s;
+}
+ul li a:hover{
+    border-radius: 20px;
+    color: rgb(203, 0, 0);
+}
+.consult-button {
+    background-color: #e74c3c;
+    color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .section-icons {
+      background-color: #cad6e8;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    .section-icons span {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .section-icons li a{
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    transition: 0,3s;
+    }
+    .section-icons li a:hover{
+    border-radius: 20px;
+    color: rgb(203, 0, 0);
+    }
+    .section-icons button{
+        cursor: pointer;
+    }
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Parte superior - imagem e texto principais */
+.topico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 80px;
+    flex-wrap: wrap;
+}
+
+.topico-texto {
+    flex: 1;
+    max-width: 50%;
+}
+
+.topico-texto h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.topico-texto h2 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.topico img {
+    float: right;
+    width: 35%;
+    height: auto;
+}
+
+/* Seção "Sobre Nós" */
+.sobre-nos {
+    background-color: #eeeeee;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.topico2 {
+    flex: 1;
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topico2 img {
+    max-width: 250px;
+    height: auto;
+}
+
+.sobre-nos-texto {
+    flex: 1;
+    max-width: 70%;
+}
+
+.sobre-nos-texto h2 {
+    color: #e60000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sobre-nos-texto p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ .active {
+      color: #ff4e4e;
+      font-weight: bold;
+    }
+
+    
+
+    .main-content {
+      text-align: center;
+      padding: 90px 20px;
+      background-color: #ffffff;
+    }
+
+    .main-content h1 {
+      font-size: 26px;
+      color: #3b3756;
+      margin-bottom: 30px;
+    }
+
+    .map-container img {
+      margin-left: 10px;
+      max-width: 20%;
+      padding: 10px;
+      height: auto;
+      float:left;
+    }
+
+    .form-section {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      float:none;
+    }
+
+    .form-section select,
+    .form-section input {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+.hero{
+  display: flex;
+  height: calc(100vh - 100px);
+  padding: 80px 50px;
+  gap: 50px;
+}
+
+.hero-rigth{
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.product{
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 20px 80px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 20rem;
+}
+.product img{
+  height: 180px;
+  width: 200px;
+}
+.hero #imgeral{
+  float: right;
+  height: 70%;
+  padding-left: 70px;
+  padding-top: 115px;
+}
