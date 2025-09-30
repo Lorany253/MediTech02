@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+   background: linear-gradient(to right, #eef4fa, #8ab8de);
+       /* Faz a imagem ocupar toda a tela */
+    /* Centraliza a imagem */
+    /* Impede que a imagem se repita */
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(225, 225, 225);
+}
+/* Estilo da logo */
+.logo img {
+    max-height: 75px; /* Ajuste a altura da logo conforme necessário */
+    float: left;
+}
+#banner{
+    background-image: url(/img/banner.png);
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: contain; /* Ajusta a imagem para caber dentro da div sem cortar */
+    display: flex;
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    overflow: hidden;
+    height: 400px;
+    width: 100%; /* Garante que a largura do banner ocupe toda a tela */;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    color: rgb(110, 198, 204);
+    margin: 15px 50px;
+}
+ul li{
+    position: center;
+    margin-top: 10px;
+}
+ul li a{
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0,3s;
+}
+ul li a:hover{
+    border-radius: 20px;
+    color: rgb(203, 0, 0);
+}
+.consult-button {
+    background-color: #e74c3c;
+    color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .section-icons {
+      background-color: #cad6e8;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    .section-icons span {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .section-icons li a{
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    transition: 0,3s;
+    }
+    .section-icons li a:hover{
+    border-radius: 20px;
+    color: rgb(203, 0, 0);
+    }
+    .section-icons button{
+        cursor: pointer;
+    }
+    
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 100px;
+  background: #e2e2e2;     /* cor de fundo */
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn img {
+  width: 24px;   /* força as imagens a terem o mesmo tamanho */
+  height: 24px;  /* independente do original */
+  object-fit: contain;
+}
+
+.btn:hover {
+  background: #aeaeae;   /* efeito hover */
+}
+
+
+/* Container principal (calendário + formulário lado a lado) */
+.container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+/* Caixa do calendário */
+.calendario {
+  background: #a7c7df;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+.calendario h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.mes {
+  background: white;
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.mes span {
+  color: red;
+  font-weight: bold;
+  display: block;
+}
+
+/* Botões dentro da área do calendário */
+.acoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.btn {
+  background: #e3edf7;
+  border-radius: 20px;
+  padding: 25px 15px;
+  width: 140px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img {
+  margin-bottom: 8px;
+}
+
+.btn-red {
+  color: red;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #d8e6f5;
+}
+
+/* Formulário */
+.formulario {
+  background: #6b9bb9;
+  padding: 25px;
+  border-radius: 15px;
+  width: 330px;
+}
+
+.formulario h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.linha {
+  display: flex;
+  gap: 10px;
+}
+
+.linha input {
+  flex: 1;
+}
+
+.botao-marcar {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-marcar:hover {
+  background: darkred;
+}
