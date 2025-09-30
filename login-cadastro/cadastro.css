@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+   background: linear-gradient(to right, #eef4fa, #8ab8de);
+       /* Faz a imagem ocupar toda a tela */
+    /* Centraliza a imagem */
+    /* Impede que a imagem se repita */
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(225, 225, 225);
+}
+/* Estilo da logo */
+.logo img {
+    max-height: 75px; /* Ajuste a altura da logo conforme necessário */
+    float: left;
+}
+#banner{
+    background-image: url(/img/banner.png);
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: contain; /* Ajusta a imagem para caber dentro da div sem cortar */
+    display: flex;
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    overflow: hidden;
+    height: 400px;
+    width: 100%; /* Garante que a largura do banner ocupe toda a tela */;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    color: rgb(110, 198, 204);
+    margin: 15px 50px;
+}
+ul li{
+    position: center;
+    margin-top: 10px;
+}
+ul li a{
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0,3s;
+}
+ul li a:hover{
+    border-radius: 20px;
+    color: rgb(203, 0, 0);
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 100px;
+  background: #e2e2e2;     /* cor de fundo */
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn img {
+  width: 24px;   /* força as imagens a terem o mesmo tamanho */
+  height: 24px;  /* independente do original */
+  object-fit: contain;
+}
+
+.btn:hover {
+  background: #aeaeae;   /* efeito hover */
+}
+.consult-button {
+    background-color: #e74c3c;
+    color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .section-icons {
+      background-color: #cad6e8;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    .section-icons span {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .section-icons li a{
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    transition: 0,3s;
+    }
+    .section-icons li a:hover{
+    border-radius: 20px;
+    color: rgb(203, 0, 0);
+    }
+    .section-icons button{
+        cursor: pointer;
+    }
+
+/* Título lateral */
+.titulo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  top: 220px;
+  left: 60px;
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: red;
+  margin-top: 4px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(200, 200, 200, 0.6);
+  border-radius: 12px;
+  padding: 35px;
+  width: 320px;
+  margin: 0 auto;
+  backdrop-filter: blur(8px);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 14px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Linha para nascimento + endereço */
+.linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.col {
+  flex: 1;
+}
+
+.nascimento {
+  display: flex;
+  gap: 6px;
+}
+
+.nascimento input {
+  width: 100%;
+  text-align: center;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  background: rgb(225, 225, 225);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #aeaeae;
+}
+.cards-botoes .btn {
+  background: rgb(255, 0, 0);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #b60000;
+}
+
+
+.link-login {
+  font-size: 14px;
+  color: red;
+  text-decoration: none;
+}
+
+.link-login:hover {
+  text-decoration: underline;
+}
